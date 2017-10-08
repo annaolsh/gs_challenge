@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./style/style.css" />
+
+    <title>getswift</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-light navbar-static-top"> <!-- fixed-top -->
+      <a class="navbar-brand" href="#"><img src="./assets/getswift2.png" alt="getswift" /></a>
+      <ul class="navbar-nav ml-auto" id="nav-items-list">
+        <li class="nav-item">
+          <a class="nav-link" href="#">+ ADD</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">MAP</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">REPORTS</a>
+        </li>
+      </ul>
+      <!-- Hamburger menu icon -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- End hamburger menu icon -->
+      <div class="navbar-collapse collapse" id="collapsingNavbar">
+          <ul class="navbar-nav">
+              <li class="nav-item active">
+                  <a class="nav-link" href="#">Link 1 <span class="sr-only">Link 1</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Link 2</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#" data-toggle="collapse">Link 3</a>
+              </li>
+          </ul>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- MAIN CONTENT -->
+    <div class="container-fluid">
+      <div class="row">
+	      <div class="col-12 col-lg-3">
+          <!-- search field -->
+          <div class="row">
+  					<div class="col-12">
+  						<div class="input-group">
+         				<input type="text" class="form-control" placeholder="Search">
+        			</div>
+  					</div>
+			    </div>
+          <!-- end search field -->
+          <!-- menu -->
+  				<div class="row">
+  					<div class="col-12">
+              <div class="input-group">
+         				<button type="button" class="btn">MENU</button>
+        			</div>
+            </div>
+          </div>
+          <!-- end menu -->
+          <!-- All Drivers -->
+          <div class="row">
+            <div class="col-12">
+              <div class="gray drivers">
+                  <p>ALL DRIVERS (1)</p>
+                    <table class="white">
+                      <tr>
+                        <td rowspan="2" id="avatar"><img src="./assets/harry_icon.jpg" alt="driver_icon"/></td>
+                        <td id="driver-name">JOSH SMITH</td>
+                        <td id="available-in">AVAILABLE IN</td>
+                      </tr>
+                      <tr>
+                        <td id="number-job">1 jobs</td>
+                        <td id="arriving-time">19 min</td>
+                      </tr>
+                    </table>
+                </div>
+            </div>
+          </div>
+          <!-- end All Drivers -->
+          <!-- All Jobs -->
+  				<div class="row">
+  					<div class="col-12">
+  						<div class="gray jobs">
+								<p>ALL JOBS (1)</p>
+								<table class="white">
+									<tr>
+										<td id="index">2244308</td>
+										<td id="en-route">EN ROUTE</td>
+									</tr>
+                  <tr>
+										<td colspan="2" id="warehouse">NYC Warehouse</td>
+									</tr>
+                  <tr>
+										<td colspan="2" id="ordered-by">Jonathan Rosham</td>
+									</tr>
+									<tr>
+										<td id="due">Due 10 days ago</td>
+										<td id="alarm-clock"><img src="./assets/alarm-clock.png" alt='alarm-clock'/></td>
+									</tr>
+                </table>
+							</div>
+						</div>
+					</div>
+				</div>
+  				<!-- end All Jobs -->
+
+        <div class="col-12 col-lg-9 maps">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9099.73208639099!2d-73.99338423432448!3d40.73417964835123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1507493000002" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+  	<!-- END main content -->
+
+    <!-- End Main Content -->
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  </body>
+</html>

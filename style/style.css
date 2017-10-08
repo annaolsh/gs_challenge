@@ -1,0 +1,318 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/**********************Navbar**********************/
+.navbar-light {
+  background-color: #de695b;
+  color: #fff;
+}
+
+.navbar-brand, .navbar-brand img {
+  height: 4vh;
+}
+
+.navbar-light .navbar-brand {
+  padding-top: 0;
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+  position: absolute;
+  right: 1%;
+  top: 3%;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  height: 5vh;
+  width: 4em;
+}
+
+.ml-auto {
+  flex-direction: inherit;
+}
+
+#nav-items-list li {
+  margin-right: 2em;
+}
+
+#nav-items-list li:last-child {
+  margin-right: 8em;
+}
+
+#nav-items-list li a{
+  color: #fff;
+	font-size: 2em;
+}
+
+/*Collapsed menu*/
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 2em;
+}
+
+/*active link*/
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+  color: #fff;
+  padding-top: 3%;
+}
+
+/*hovered link*/
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: #fff;
+  font-weight: bold;
+}
+
+#collapsingNavbar .navbar-brand {
+  display: none;
+}
+/**********************END Navbar**********************/
+
+/**********************MAIN CONTENT**********************/
+.gray {
+  background-color: #eeeeee;
+  margin-top: 3vh;
+}
+
+.gray, .white, .input-group .form-control {
+  border-radius: 0.8vh;
+}
+
+.white {
+  background-color: #fff;
+  bottom: 1.5vh;
+  box-shadow: 0 3px 2px -2px #abafb6;
+  left: 3%;
+  position: absolute;
+  width: 94%;
+}
+
+/*form*/
+.input-group .form-control {
+  border: 1px solid #8e9298;
+  height: 7vh;
+	margin-top: 2vh;
+	margin-bottom: 0;
+  font-size: 2.5vh;
+}
+
+.btn:focus, .form-control:focus {
+  border-color: #eeeeee;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(224,120,108, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(224,120,108, 0.6);
+}
+
+/*menu button*/
+.btn{
+  background-color: #eeeeee;
+  color: #e0786c;
+  cursor: pointer;
+  font-size: 3.5vh;
+  height: 10vh;
+  margin-bottom: 0;
+	margin-top: 3vh;
+	width: 100%;
+}
+
+/*all drivers*/
+.drivers {
+  height: 24vh;
+}
+
+p {
+  color: #e0786c;
+  font-size: 3.5vh;
+  padding-top: 3vh;
+  margin-bottom: 3vh;
+  text-align: center;
+}
+
+#avatar {
+  width: 20%;
+}
+
+#avatar img {
+  width: 9em;
+}
+
+#driver-name{
+	font-size: 2.5vh;
+	color: #ff0000;
+	text-align: left;
+	font-weight: 600;
+	padding-left: 0.5em;
+}
+
+#available-in{
+	font-size: 2.5vh;
+	color: #000;
+	text-align: right;
+	font-weight: 600;
+	padding-right: 0.5em;
+}
+
+#number-job{
+	font-size: 2.8vh;
+	color: #787a7f;
+	text-align: left;
+	font-weight: 400;
+	padding-left: 0.5em;
+}
+
+#arriving-time{
+	font-size: 2.8vh;
+	color: #787a7f;
+	text-align: right;;
+	font-weight: 400;
+	padding-right: 0.5em;
+}
+/*end All drivers*/
+
+/*All Jobs*/
+.jobs {
+  height: 32vh;
+}
+#index, #warehouse, #ordered-by, #due {
+  font-size: 2.8vh;
+  font-weight: 400;
+  padding-left: 0.5em;
+  text-align: left;
+}
+
+#index {
+  color: #787a7f;
+}
+
+#en-route {
+  color: #ff0000;
+  font-size: 2.5vh;
+  font-weight: 600;
+  text-align: right;
+  padding-right: 1em;
+}
+
+#warehouse {
+  color: #e0786c;
+}
+
+#ordered-by {
+  color: #52dba4;
+  font-weight: 600;
+}
+
+#due {
+  color: #ff0000;
+  padding-bottom: 2vh;
+}
+
+#alarm-clock {
+  text-align: right;
+  padding-bottom: 2vh;
+  padding-right: 2em;
+}
+
+#alarm-clock img {
+  height: 3vh;
+}
+/*end all jobs*/
+/*map*/
+iframe {
+  margin-top: 3vh;
+  width: 100%;
+  height: 50vh;
+}
+/*end map*/
+/**********************END Main content**********************/
+
+
+/**********************BREAKPOINTS**********************/
+/*// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap*/
+
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  #nav-items-list li a, .navbar-light .navbar-nav .nav-link {
+    font-size: 1.2em;
+  }
+  .input-group .form-control {
+    font-size: 1em;
+  }
+
+  .btn {
+    font-size: 1.5vh;
+    height: 5vh;
+  }
+
+  p {
+    font-size: 1.5vh;
+  }
+
+  #driver-name, #available-in, #arriving-time, #number-job {
+    font-size: 1.5vh;
+  }
+
+  #avatar img {
+    width: 2em;
+  }
+
+  .drivers {
+    height: 13vh;
+  }
+
+  .white {
+    bottom: 1vh;
+    left: 8%;
+    width: 84%;
+  }
+
+  p {
+    padding-top: 2vh;
+  }
+
+  #index, #warehouse, #ordered-by, #due {
+    font-size: 1.4vh;
+  }
+
+  #en-route {
+    font-size: 1.6vh;
+  }
+
+  #alarm-clock img {
+    height: 2vh;
+  }
+
+  #alarm-clock {
+    padding-bottom: 1vh;
+    padding-right: 1em;
+  }
+
+  .jobs {
+    height: 19vh;
+  }
+
+  #due {
+    padding-bottom: 1vh;
+  }
+
+  iframe {
+    height: 93vh;
+    margin: 0 0 0 0;
+  }
+
+  #nav-items-list li:last-child {
+    margin-right: 7em;
+  }
+
+}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+
+
+}
+/**********************END BREAKPOINTS**********************/
